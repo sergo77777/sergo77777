@@ -1,0 +1,136 @@
+body {background: url(foto.jpg);
+        background-position: center center;
+        background-repeat:  no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+  }
+ #blok {background-color: rgba(0,0,0,.4);
+height: 100%;
+width: 100%;
+position: fixed;
+top: 0;
+left: 0;
+}     
+#nazva {font-size: 20px;
+        color: red;
+       }
+#adres {font-size: 10px;
+        color: #000;
+        position: absolute;
+        width: 22%;
+        top: 0;
+        right: 0;
+        height: 35px;}
+#tel    {font-size: 50px;
+        color: rgb(236, 240, 10);
+         width: 100%;
+         position: relative;
+         top:-30px;
+         left: 300px;
+        } 
+
+#content {font-size: 30px;
+        color:wheat;
+        height: 250px;
+        width: 100%;
+        position: relative;
+        top:-20px;}
+.cena {position: relative;
+       display: inline; /*блочный элемент который обтекается другими если незадать топрипопадании мыши в строку откр комент*/
+       font-size: 30px;
+        color:yellow;
+        top: 30px;
+}        
+.cost {visibility: hidden; /*содержимое контейнера не видно*/
+        text-align: center;
+        background-color:black;
+        padding: 5px 0;
+        border-radius: 6px;
+        width: 300px;
+        font-size: 15px;
+       color:wheat;
+       position: absolute;
+       }
+.cena:hover .cost
+      {visibility: visible;} /* при наведении мыши изменяется свойство*/ 
+ .uslugi {position: relative;
+        display: inline;
+        font-size: 30px;
+         color:yellow;
+         top: 100px;
+         left: -70px;;
+        }     
+ .uslugi1 {visibility: hidden;
+         text-align: center;
+         background-color:black;
+         padding: 5px 0;
+         border-radius: 6px;
+         width: 300px;
+         font-size: 15px;
+        color:wheat;
+        position: absolute;
+        }
+ .uslugi:hover .uslugi1
+       {visibility: visible;}
+.consalt {
+        position: absolute;
+        top: 400px;
+        right: -15px;
+        }
+ .consalt p {font-size: 20px;
+                color:yellow;}
+        .obratnuj-zvonok{
+                width: 100%;
+                max-width: 260px;
+                font-size: 15px;
+        }
+        .form-zvonok{ /*определяем форму общий вид */
+                display: flex; /* определяет как распологаются элементы, это унас родительский.внутренние дивы одинаковой высоты*/
+                flex-direction: column; /*направление раскладки блоков-колонкой*/
+                padding: 0 30px;
+                box-sizing: border-box;/*  размеры бокса высчитывается исходя извнутренего  контента +падинги бордер а не контента в них*/
+                width: 100%;
+                position: relative;
+        }
+        .form-zvonok div{
+                padding: 5px 0; /*устанавливают границы внутри между рамкой и текстом внутри*/
+        }
+        .bot-send-mail{
+                box-sizing: border-box; /*размер блока определяется внутр контентом*/
+                width: 100%;
+        }
+        .form-zvonok label,.form-zvonok input{
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+        }
+        .form-zvonok label{ /*размеры надписей имя ...*/
+                margin-bottom: 5px; /*отступ от нижнего края элемента*/
+                font-weight: bold;/*полужирное начертание*/
+                color:wheat;
+        }
+        .form-zvonok input{
+                padding: 5px 10px;
+                margin-top: 10px;
+        }
+        .form-zvonok label span{
+                color: red;
+        }
+        .form-zvonok .bot-send-mail{
+                padding: 15px;
+                margin-top: 10px;
+                background: wheat;
+                border: none; 
+                text-transform: uppercase;
+                color: #fff;
+                font-weight: bold;
+                background-color: #009b97;
+                cursor: pointer;
+                border: 3px #009b97 solid; /* параметры рамки*/
+                border-radius: 5px;
+        }
+        .form-zvonok .bot-send-mail:hover{
+                color: #009b97;
+                background-color: #fff;
+        }
+        
